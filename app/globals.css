@@ -1,27 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: #F0F0F0;
+  font-size: 2em;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.patata {
+  border: 1px solid #FF0000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.patata h2{
+  color: #0000FF;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.lista-cursos{
+  display: flex;
+  flex-direction: column;
+}
+.un-curso{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  border: 1px solid #909090;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
